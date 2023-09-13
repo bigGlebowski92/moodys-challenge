@@ -69,7 +69,7 @@ function App() {
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         />
-        {content}
+        <table className="photo-post__table">{content}</table>
         {isLoading && <p className="center">Loading More Posts...</p>}
       </div>
     </section>
